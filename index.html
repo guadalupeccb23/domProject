@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>DOM Examples</title>
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <h1>querySelector</h1>
+    <p id="description" class="main">
+        Uses a CSS selector pattern and CSS selector rules to find a matching element. Returns the FIRST matching
+        element. If NO match is found, null is returned.
+    </p>
+    <button ondblclick="getDescription()">Get description</button>
+    <br>
+    <br>
+    <section id="response">
+        You can use any valid CSS selector with querySelector. The selectors can be simple like querySelector(“section")
+        or complex like querySelector("#main div .summary").
+    </section>
+
+    <section>
+        <button onclick="executeQuerySelector()">Click me</button>
+    </section>
+
+    <section>
+        <h1>querySelectorAll Example</h1>
+
+        <h2>Red Fruits</h2>
+        <ul class="red">
+            <li>Strawberry</li>
+            <li>Raspberry</li>
+            <li>Cherry</li>
+        </ul>
+        <button onclick="executeSelectAll()">Execute querySelectorAll</button>
+        <button onclick="addRedFruit()">Add Red Fruit</button>
+        <button onclick="removeRedFruit()">Remove last Red Fruit</button>
+       
+    </section>
+</body>
+
+</html>
